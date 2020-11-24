@@ -5,9 +5,7 @@ import LoadMoreBtn from './js/loadMoreBtn';
 import gallery from './templates/gallery.hbs';
 import 'material-design-icons/iconfont/material-icons.css';
 
-import "@pnotify/core/dist/PNotify.css";
-import '@pnotify/core/dist/BrightTheme.css';
-import { defaults, alert } from '@pnotify/core';
+
 
 const debounce = require('lodash.debounce');
 
@@ -31,7 +29,7 @@ function onSearch(event) {
 
     clearGallery();
     newLoadMoreBtn.hide();
-    
+
     if (search === '') {
         return 
     };
@@ -73,21 +71,6 @@ function scroolTo() {
 
 }
 
-function pushError() {
-    alert({
-        text: 'Шеф, все пропало! Введи что то другое.'
-    });
-}
 
-
-// defaults.styling = 'material';
-// defaults.icons = 'material';
-// defaults.width = '360px'; // ширина
-// defaults.minHeight = '40px'; // мин высота
-// defaults.delay = '1500'; // время показа уведомления
-// defaults.closer = false; // крестик закрытия
-// defaults.sticker = false; // иконка булавки
-// defaults.addClass = 'error'; // кастомный класс для своих стилей
-// defaults.autoOpen = true; // сработка при объявлении
 
 
