@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; 
+
+}
+
+.gallery-list{
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-items{
+  width: 33%;
+}
+
+.photo-card{
+  margin: 10px;
+  border: 1px solid rgb(79, 92, 88); 
+  background-color: rgb(192, 202, 197);
+}
+
+.gallery-image{
+  width: 100%;
+  object-fit: cover;
+  height: 250px;
+}
+
+.stats{
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.stats-item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 7px 11px;
+}
+
+
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.button > .spinner.is-hidden {
+  display: none;
+}
